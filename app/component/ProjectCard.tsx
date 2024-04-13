@@ -3,7 +3,15 @@ import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+interface ProjectCardProps {
+  imgUrl: string;
+  title: string;
+  description: any;
+  gitUrl: string;
+  previewUrl: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <motion.div
       initial={{ scale: 0 }}

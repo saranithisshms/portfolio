@@ -15,7 +15,7 @@ const EmailSection = () => {
     message: "",
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     const data = {
       email: formData.email,
@@ -47,7 +47,7 @@ const EmailSection = () => {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e:any,) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,

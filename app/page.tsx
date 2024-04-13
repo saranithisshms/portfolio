@@ -12,7 +12,7 @@ import SkeletonLoading from "./component/Skeleton";
 import Head from 'next/head'
  
 
-const index = () => {
+function Home(){
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -50,4 +50,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;

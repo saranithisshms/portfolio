@@ -63,6 +63,7 @@ const projectsData = [
     id: 5,
     title: "Just Pucket",
     image: "/images/justPucket.png",
+    description: "Project 4 description",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -71,6 +72,7 @@ const projectsData = [
     id: 6,
     title: "Meena Finder",
     image: "/images/meenFinder.png",
+    description: "Project 4 description",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -82,7 +84,7 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
+  const handleTagChange = (newTag:any,) => {
     setTag(newTag);
   };
 
